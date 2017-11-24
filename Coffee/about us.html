@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <style>
+        body {
+            /* height: 630px; */
+            padding-top: 106px;
+        }
+
+        nav {
+            font-family: 微軟正黑體;
+            font-size: 1.3rem;
+            z-index:-1;
+        }
+
+        .container {
+            background-color: #DBB092;
+            z-index:-1;
+        }
+
+        .bg-ligh {
+            background-color: #DBB092;
+            z-index:-1;
+        }
+
+        .nav-link {
+            background-color: #A16758;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .example-image {
+            width: 5rem;
+            /* width: 80px;
+            height: 80px; */
+            border-radius: 20%;
+            /* border: 1px solid black; */
+        }
+        .about1{
+           width:100%;
+           height: 4rem;
+           border: 1px solid black;
+           background-color: #251208;
+           position: relative;
+        }
+        .abouta{
+            /* background-image: url("img/about us.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            width: 7em;
+            height: 7em;
+            border: 1px solid yellow;
+            background-color: #251208;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius:50%; 
+            font-size: 1.3rem;
+            font-family: 微軟正黑體;
+            color: white;
+            text-align: center;
+            line-height:7rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-ligh">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img class="example-image" src="/img/logo-02.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">關於我們
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            產品一覽
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">咖啡飲品</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">西點蛋糕</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">烘焙麵包</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">手工餅乾</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">義式冰品</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯絡我們</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#">
+                    <img class="example-image" src="/img/icon.png" alt="">
+                </a>
+            </div>
+    </nav>
+
+    <div class="abouts">
+        <div class="about1">
+            <div class="abouta">關於我們</div>
+        </div>
+        <div class="about2"></div>
+        <div class="about3"></div>
+    </div>
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
