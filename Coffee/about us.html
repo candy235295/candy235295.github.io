@@ -13,6 +13,7 @@
             /* height: 630px; */
             padding-top: 106px;
             height: 2402px;
+            font-family: 微軟正黑體;
         }
 
         nav {
@@ -60,6 +61,19 @@
             z-index: -1;
         }
 
+        .interval3 {
+            width: 100%;
+            height: 90px;
+            /* border: 1px solid green; */
+            position: absolute;
+            background-image: url("img/interval.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 885px;
+            z-index: -1;
+        }
+
         .about1 {
             width: 100%;
             height: 4rem;
@@ -96,8 +110,8 @@
         .content1 {
             width: 100%;
             height: 385px;
-            /* border: 1px solid red; */
-            top: 33%;
+            border: 1px solid red;
+            top: 215px;
             position: absolute;
         }
 
@@ -114,22 +128,22 @@
 
         .abouttext1 {
             /* position: absolute; */
-            width: 55%;
+            width: 60%;
             height: 290px;
             /* border: 1px solid blue; */
             float: left;
-            padding-left: 3%;
+            padding-left: 50px;
             font-family: 微軟正黑體;
             line-height: 25px;
         }
 
         .img1 {
-            width: 45%;
+            width: 40%;
             height: 290px;
             position: relative;
             /* border: 1px solid red; */
             float: right;
-            padding-left: 10%;
+            padding-left: 150px;
             /* top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); */
@@ -143,7 +157,6 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            position: absolute;
             /* left: 70%;
             transform: translate(-20%); */
         }
@@ -160,8 +173,8 @@
         .content2 {
             width: 100%;
             height: 385px;
-            /* border: 1px solid red; */
-            top: 110%;
+            border: 1px solid red;
+            top: 700px;
             position: absolute;
         }
 
@@ -178,22 +191,22 @@
 
         .abouttext2 {
             /* position: absolute; */
-            width: 55%;
+            width: 60%;
             height: 290px;
             /* border: 1px solid blue; */
             float: right;
-            padding-left: 3%;
+            padding-left: 50px;
             font-family: 微軟正黑體;
             line-height: 25px;
         }
 
         .img2 {
-            width: 45%;
+            width: 40%;
             height: 290px;
             position: relative;
             /* border: 1px solid green; */
             float: left;
-            padding-left: 10%;
+            padding-left: 100px;
             /* top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); */
@@ -216,7 +229,7 @@
         .about3 {
             width: 100%;
             height: 4rem;
-            top: 822px;
+            top: 842px;
             /* border: 1px solid black; */
             background-color: #251208;
             position: relative;
@@ -224,18 +237,19 @@
 
         .content3 {
             width: 100%;
-            height: 385px;
+            height: 976px;
             border: 1px solid red;
-            top: 187%;
+            top: 1186px;
             position: absolute;
         }
 
         .text3 {
             width: 80%;
-            height: 290px;
-            /* border: 1px solid orchid; */
+            height: 976px;
+            border: 1px solid orchid;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
             /* top: 33%;
             position: absolute;
             left: 10%; */
@@ -276,6 +290,169 @@
 
             /* left: 70%;
             transform: translate(-20%); */
+        }
+
+        .branch-line {
+            width: 15px;
+            height: 865px;
+            background-color: yellowgreen;
+            box-sizing: inherit;
+            position: absolute;
+            clear: both;
+            margin-left: 50%;
+            top: 30px;
+        }
+
+        .branch {
+            width: 50%;
+            height: 865px;
+            border: 1px dodgerblue solid;
+            float: left;
+            clear: both;
+            position: absolute;
+            padding: 45px 0 15px 0;
+            top: 30px;
+        }
+
+        .branch2 {
+            width: 50%;
+            height: 865px;
+            border: 1px black solid;
+            float: right;
+            padding: 150px 0 15px 0;
+            margin-top: 30px;
+
+        }
+
+        .years-branch {
+            margin-bottom: 50px;
+            height: 180px;
+        }
+
+        .years-branch2 {
+            margin-bottom: 50px;
+            height: 180px;
+        }
+
+        .left-line {
+            width: 80px;
+            height: 3px;
+            background-color: red;
+            float: right;
+            margin: 11px 0px;
+            box-sizing: inherit;
+        }
+
+        .left-circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background-color: #FAD200;
+            display: block;
+            float: right;
+            box-sizing: inherit;
+        }
+
+        .left-branch-text {
+            text-align: right;
+            float: right;
+            font-size: 15px;
+            padding: 0 15px;
+            width: 60%;
+        }
+
+        .right-line2 {
+            width: 80px;
+            height: 3px;
+            background-color: red;
+            float: left;
+            margin: 11px 0px;
+            box-sizing: inherit;
+        }
+
+        .right-circle2 {
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background-color: #FAD200;
+            display: block;
+            float: left;
+            box-sizing: inherit;
+        }
+
+        .right-branch-text {
+            text-align: left;
+            float: left;
+            font-size: 15px;
+            padding: 0 15px;
+            width: 80%;
+        }
+
+
+
+        @media screen and (max-width:1200px) {
+            .img1{
+                width:30%;
+                height:auto;
+                padding-left: 0;
+            }
+            .aboutimg1{
+                width: 100%;
+                padding-top: 100%;
+                height:auto;
+            }
+            .aboutimg2{
+                width: 100%;
+                padding-top: 100%;
+                height:auto;
+            }
+            .img2 {
+                width:30%;
+                height:auto;
+                padding-left: 0;
+            }
+
+            .abouttext1 {
+                width: 70%;
+                padding: 0px;
+                text-align: left;
+            }
+            .abouttext2 {
+                width: 70%;
+                padding: 0px;
+                text-align: left;
+            }
+            h4{
+                font-size: 28px
+            }
+            p{
+                font-size: 18px
+            }
+        }
+
+        /* 螢幕 及 螢幕尺寸 小於 460px 時，會成為mobile排版尺寸 */
+
+        @media screen and (max-width:460px) {
+            .img1 {
+                display: none;
+            }
+            .img2 {
+                display: none;
+            }
+
+            .abouttext1 {
+                width: 100%;
+            }
+            
+            .abouttext2 {
+                width: 100%;
+            }
+            h4{
+                font-size: 30px
+            }
+            p{
+                font-size: 20px
+            }
         }
     </style>
 </head>
@@ -393,34 +570,147 @@
         </div>
     </div>
 
-    *
     <div class="about3">
         <div class="abouta">歷史由來</div>
     </div>
 
     <div class="content3">
-        <div class="interval"></div>
+        <div class="interval3"></div>
         <div class="text3">
-            <div class="abouttext3">
-                <h4>
-                    <B>歷史簡介</B>
-                </h4>
-                <br>
-                <p>
-                    參閱 BEE 這個網站 or CAMA咖啡 兩個
-                </p>
+            <div class="branch-line"></div>
+
+            <div class="branch">
+                <div class="years-branch">
+                    <div class="left-line"></div>
+                    <div class="left-circle"></div>
+                    <div class="left-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <P>
+                                        ◆ 義式咖啡豆榮獲Coffee Review
+                                        <br> 國際咖啡評鑑91分認證
+                                        <br>
+                                        <br> ◆ 果樹女神咖啡豆榮獲Coffee Review
+                                        <br> 國際咖啡評鑑92分認證
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="years-branch">
+                    <div class="left-line"></div>
+                    <div class="left-circle"></div>
+                    <div class="left-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <P>
+                                        ◆ 《天下雜誌》金牌服務業調查 -
+                                        <br> [連鎖咖啡業]獲選入前五強
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="years-branch">
+                    <div class="left-line"></div>
+                    <div class="left-circle"></div>
+                    <div class="left-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <P>
+                                        ◆ 店長拉花比賽冠軍
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="years-branch">
+                    <div class="left-line"></div>
+                    <div class="left-circle"></div>
+                    <div class="left-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p>
+                                        ◆ 創立第一家店
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img3">
+
+            <div class="branch2">
+                <div class="years-branch2">
+                    <div class="right-line2"></div>
+                    <div class="right-circle2"></div>
+                    <div class="right-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p>
+                                        ◆ 果樹女神Pomona耳掛包
+                                        <br> 獲得[2014臺北咖啡掛耳包競賽]第三名
+                                        <br>
+                                        <br> ◆ 與LINE Q 合作， 化身即時線上解答好幫手，
+                                        <br> 透過輕鬆的互動方式和大家分享咖啡知識
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="years-branch2">
+                    <div class="right-line2"></div>
+                    <div class="right-circle2"></div>
+                    <div class="right-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p>
+                                        ◆ 榮獲工商時報 [台灣服務業大評鑑] 連鎖店亞軍
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="years-branch2">
+                    <div class="right-line2"></div>
+                    <div class="right-circle2"></div>
+                    <div class="right-branch-text">
+                        <div class="container1">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p>
+                                        ◆ 開放加盟
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="img3">
                 <div class="aboutimg3"></div>
             </div>
         </div>
-    </div>
+        </div>
 
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
