@@ -110,7 +110,7 @@
         .content1 {
             width: 100%;
             height: 385px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             top: 215px;
             position: absolute;
         }
@@ -173,7 +173,7 @@
         .content2 {
             width: 100%;
             height: 385px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             top: 700px;
             position: absolute;
         }
@@ -238,7 +238,7 @@
         .content3 {
             width: 100%;
             height: 976px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             top: 1186px;
             position: absolute;
         }
@@ -246,7 +246,7 @@
         .text3 {
             width: 80%;
             height: 976px;
-            border: 1px solid orchid;
+            /* border: 1px solid orchid; */
             margin-left: auto;
             margin-right: auto;
             position: relative;
@@ -259,7 +259,7 @@
             /* position: absolute; */
             width: 55%;
             height: 290px;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             float: right;
             padding-left: 3%;
             font-family: 微軟正黑體;
@@ -301,12 +301,13 @@
             clear: both;
             margin-left: 50%;
             top: 30px;
+            border-radius: 20px;
         }
 
         .branch {
             width: 50%;
             height: 865px;
-            border: 1px dodgerblue solid;
+            /* border: 1px dodgerblue solid; */
             float: left;
             clear: both;
             position: absolute;
@@ -317,7 +318,7 @@
         .branch2 {
             width: 50%;
             height: 865px;
-            border: 1px black solid;
+            /* border: 1px black solid; */
             float: right;
             padding: 150px 0 15px 0;
             margin-top: 30px;
@@ -388,28 +389,74 @@
             width: 80%;
         }
 
+        .footer {
+            width: 100%;
+            height: 241px;
+            border: 1px solid black;
+            position: absolute;
+            top: 2160px;
+        }
+
+        .footer-logo {
+            width: 30%;
+            border: 1px solid black;
+            float: left;
+            /* position: absolute; */
+        }
+
+        .footer-conter {
+            width: 70%;
+            border: 1px solid black;
+            /* position: absolute; */
+            float: right;
+        }
+
+        .footer-icon {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        .footer-text {
+            width: 100%;
+            border: 1px solid blue;
+        }
 
 
         @media screen and (max-width:1200px) {
-            .img1{
-                width:30%;
-                height:auto;
-                padding-left: 0;
+
+            body {
+                padding-top: 106px;
+                height: 2500px;
+                font-family: 微軟正黑體;
             }
-            .aboutimg1{
+            h4 {
+                font-size: 25px
+            }
+
+            p {
+                font-size: 16px
+            }
+
+            .about2 {
+                top: 500px;
+            }
+
+            .interval {
+                top: 380px;
+            }
+
+            .content2 {
+                top: 780px
+            }
+
+            .about3 {
+                top: 1010px;
+            }
+            .content3 {
+                top: 1355px
+            }
+            .text3 {
                 width: 100%;
-                padding-top: 100%;
-                height:auto;
-            }
-            .aboutimg2{
-                width: 100%;
-                padding-top: 100%;
-                height:auto;
-            }
-            .img2 {
-                width:30%;
-                height:auto;
-                padding-left: 0;
             }
 
             .abouttext1 {
@@ -421,18 +468,75 @@
                 width: 70%;
                 padding: 0px;
                 text-align: left;
+                padding-left: 30px;
+
             }
-            h4{
-                font-size: 28px
+
+            .img1 {
+                width: 30%;
+                height: auto;
+                padding-left: 30px;
+
             }
-            p{
-                font-size: 18px
+
+            .aboutimg1 {
+                width: 100%;
+                padding-top: 100%;
+                height: auto;
             }
+
+            .aboutimg2 {
+                width: 100%;
+                padding-top: 100%;
+                height: auto;
+
+            }
+
+            .img2 {
+                width: 30%;
+                height: auto;
+                padding-left: 0;
+            }
+            .footer {
+                width: 100%;
+                height: 241px;
+                border: 1px solid black;
+                position: absolute;
+                top: 2328px;
+            }
+
         }
 
         /* 螢幕 及 螢幕尺寸 小於 460px 時，會成為mobile排版尺寸 */
 
         @media screen and (max-width:460px) {
+
+            h4 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .content1 {
+                height: 600px;
+            }
+
+            .abouttext1 {
+                width: 100%;
+                padding: 0px;
+            }
+
+            .abouttext2 {
+                width: 100%;
+                padding: 0px;
+            }
+
+            .text3 {
+                width: 100%;
+            }
+
             .img1 {
                 display: none;
             }
@@ -440,19 +544,6 @@
                 display: none;
             }
 
-            .abouttext1 {
-                width: 100%;
-            }
-            
-            .abouttext2 {
-                width: 100%;
-            }
-            h4{
-                font-size: 30px
-            }
-            p{
-                font-size: 20px
-            }
         }
     </style>
 </head>
@@ -588,6 +679,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <P>
+                                        <h5>
+                                            <b>2017年</b>
+                                        </h5>
                                         ◆ 義式咖啡豆榮獲Coffee Review
                                         <br> 國際咖啡評鑑91分認證
                                         <br>
@@ -608,6 +702,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <P>
+                                        <h5>
+                                            <b>2015年</b>
+                                        </h5>
                                         ◆ 《天下雜誌》金牌服務業調查 -
                                         <br> [連鎖咖啡業]獲選入前五強
                                     </P>
@@ -624,6 +721,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <P>
+                                        <h5>
+                                            <b>2013年</b>
+                                        </h5>
                                         ◆ 店長拉花比賽冠軍
                                     </P>
                                 </div>
@@ -640,6 +740,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <p>
+                                        <h5>
+                                            <b>2011年</b>
+                                        </h5>
                                         ◆ 創立第一家店
                                     </p>
                                 </div>
@@ -658,6 +761,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <p>
+                                        <h5>
+                                            <b>2016年</b>
+                                        </h5>
                                         ◆ 果樹女神Pomona耳掛包
                                         <br> 獲得[2014臺北咖啡掛耳包競賽]第三名
                                         <br>
@@ -677,6 +783,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <p>
+                                        <h5>
+                                            <b>2014年</b>
+                                        </h5>
                                         ◆ 榮獲工商時報 [台灣服務業大評鑑] 連鎖店亞軍
                                     </p>
                                 </div>
@@ -692,6 +801,9 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <p>
+                                        <h5>
+                                            <b>2012年</b>
+                                        </h5>
                                         ◆ 開放加盟
                                     </p>
                                 </div>
@@ -700,17 +812,38 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="img3">
-                <div class="aboutimg3"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img class="example-image" src="/img/logo-02.png" alt="">
+        </div>
+        <div class="footer-conter">
+            <div class="footer-icon"></div>
+            <div class="footer-text">
+                <pre>
+                        我們深知一杯美味咖啡的各項環節與要素。 
+                        所以選擇在店內精準演繹整個 Bean-to-Cup 流程。
+                        手工挑豆、得宜烘焙、即時研磨、專業吧台技術…
+                        從一顆生豆到一杯咖啡，最透明的製作流程，提供最真誠的賞味體驗。
+                        
+                        
+                        
+                        
+                        公司電話：(02)2775-3385　
+                        公司地址：台北市大安區安和路一段27號18樓
+                        E-mail : service@camacafe.com
+                </pre>
             </div>
         </div>
-        </div>
+    </div>
 
 
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
