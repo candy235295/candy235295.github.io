@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <style>
+        body {
+            /* height: 630px; */
+            padding-top: 106px;
+            height: 1210px;
+            font-family: 微軟正黑體;
+        }
+
+        nav {
+            font-family: 微軟正黑體;
+            font-size: 1.3rem;
+            /* z-index:-1; */
+        }
+
+        .container {
+            background-color: rgb(255, 230, 208);
+            /* z-index:-1; */
+        }
+
+        .bg-ligh {
+            background-color: rgb(255, 230, 208);
+            /* z-index:-1; */
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: white;
+            background-color: rgb(87, 53, 46);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+            background-color: rgb(160, 102, 87);
+        }
+
+        .nav-link {
+            background-color: #A16758;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .nav-link {
+            background-color: #A16758;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .example-image {
+            width: 5rem;
+            /* width: 80px;
+            height: 80px; */
+            border-radius: 20%;
+            /* border: 1px solid black; */
+        }
+
+        .about1 {
+            width: 100%;
+            height: 4rem;
+            /* border: 1px solid black; */
+            background-color: #251208;
+            position: relative;
+        }
+
+        .abouta {
+            /* background-image: url("img/about us.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            width: 8rem;
+            height: 6.5rem;
+            background-color: #251208;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            font-size: 1.3rem;
+            font-family: 微軟正黑體;
+            color: white;
+            text-align: center;
+            line-height: 7rem;
+            z-index: 1;
+        }
+
+        .trian {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 0 20px 26.6px;
+            border-color: transparent transparent transparent rgb(255, 230, 208);
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .imgs {
+            width: 190px;
+            height: 140px;
+            position: relative;
+            /* border: 1px solid black; */
+            background-color: rgb(255, 230, 208);
+            border-radius: 10px;
+        }
+
+        .ia {
+            width: 170px;
+            height: 120px;
+            position: relative;
+            /* border: 1px solid black; */
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .interval1 {
+            width: 100%;
+            height: 90px;
+            /* border: 1px solid green; */
+            position: absolute;
+            background-image: url("img/interval.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* top: 480px; */
+            bottom: 0px;
+            z-index: -1;
+        }
+
+        .number {
+            float: right;
+            width: 300px;
+            height: 90px;
+            /* border: 2px solid rgb(255, 128, 128); */
+            position: relative;
+        }
+
+        ol {
+            padding: 0px;
+            position: absolute;
+        }
+
+        ol li {
+            width: 30px;
+            height: auto;
+            display: inline-block;
+            background-color: rgb(255, 230, 208);
+
+            color: rgb(0, 0, 0);
+            border-radius: 3px;
+            padding: 5px;
+            /* margin-right: 12px; */
+            transition-duration: 0.5s;
+            text-align: center;
+        }
+
+        .content1 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid rgb(31, 141, 0); */
+            top: 215px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .text1 {
+            width: 90%;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* top: 33%;
+            position: absolute;
+            left: 10%; */
+        }
+
+        .a1 {
+            width: 48%;
+            /* border: 1px solid gold; */
+            display: inline-block;
+            margin: 10px;
+            /* position: absolute; */
+        }
+
+        .abouttext1 {
+            width: 60%;
+            height: auto;
+            float: right;
+            padding: 20px;
+            font-family: 微軟正黑體;
+            line-height: 25px;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .img1 {
+            width: 40%;
+            height: auto;
+            position: relative;
+            float: left;
+        }
+
+        .aboutimg1 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/白吐司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutimg2 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/夏威夷吐司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutimg3 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/葡萄吐司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutimg4 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/香濃牛奶土司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutimg5 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/蜂蜜吐司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutimg6 {
+            width: 175px;
+            height: 125px;
+            position: absolute;
+            background-image: url("img/Toast/番茄凱薩吐司.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            width: 100%;
+            height: 241px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 970px;
+            background-color: #251208;
+            color: white;
+        }
+
+        .footer-logo {
+            width: 25%;
+            /* border: 1px solid black; */
+            float: left;
+            margin-top: 60px;
+            padding-left: 5%;
+            /* position: absolute; */
+        }
+
+        .footer-conter {
+            width: 75%;
+            /* border: 1px solid black; */
+            /* position: absolute; */
+            float: right;
+            margin-top: 60px;
+        }
+
+        .footer-icon {
+            width: 50%;
+            /* border: 1px solid red; */
+            display: flex;
+            float: right;
+            padding-left: 30px
+        }
+
+        .footer-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            margin-right: 10px
+        }
+
+        .footer-text {
+            width: 50%;
+            height: 126px;
+            /* border: 1px solid blue; */
+            float: left;
+            line-height: 31px;
+            font-size: 16px;
+        }
+
+        .footer-text2 {
+            width: 50%;
+            /* border: 1px solid green; */
+            float: right;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+
+        .footera {
+            float: left;
+            position: relative;
+            left: 50%
+        }
+
+        .footerb {
+            float: left;
+            position: relative;
+            left: -50%;
+        }
+
+
+        @media screen and (max-width:1200px) {
+
+            body {
+
+                padding-top: 106px;
+                height: 800px;
+                font-family: 微軟正黑體;
+            }
+            h4 {
+                font-size: 25px
+            }
+
+            p {
+                font-size: 16px
+            }
+
+            .about2 {
+                top: 500px;
+                width: 100%;
+            }
+
+            .number {
+                float: right;
+                width: 300px;
+                height: 100px;
+                /* border: 2px solid rgb(255, 128, 128); */
+                position: relative;
+            }
+
+            ol {
+                padding: 0px;
+                position: absolute;
+            }
+
+            ol li {
+                width: 30px;
+                height: auto;
+                display: inline-block;
+                background-color: rgb(255, 230, 208);
+
+                color: rgb(0, 0, 0);
+                border-radius: 3px;
+                padding: 5px;
+                /* margin-right: 12px; */
+                transition-duration: 0.5s;
+                text-align: center;
+            }
+
+            .interval {
+                width: 100%;
+                height: 90px;
+                /* border: 1px solid green; */
+                position: absolute;
+                background-image: url("img/interval.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 289px;
+                /* bottom: 0px; */
+                z-index: -1;
+            }
+            .trian {
+                display: none
+                /* width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 0 20px 26.6px;
+                border-color: transparent transparent transparent rgb(255, 230, 208);
+                position: absolute;
+                top: 50%;
+                left: 90%;
+                transform: translate(-50%, -50%); */
+            }
+
+            .content1 {
+                width: 100%;
+                height: auto;
+                /* border: 1px solid rgb(51, 255, 0); */
+                top: 220px;
+                padding-top: 20px;
+                position: absolute;
+        }
+
+        .text1 {
+            width: 90%;
+            height: 800px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* top: 33%;
+            position: absolute;
+            left: 10%; */
+        }
+
+        .a1 {
+            width: 100%;
+            /* border: 1px solid gold; */
+            display: inline-block;
+            margin: 0px;
+            /* position: absolute; */
+            margin: auto;
+        }
+
+        .abouttext1 {
+            width: 50%;
+            height: auto;
+            float: right;
+            padding: 10px;
+            font-family: 微軟正黑體;
+            line-height: 25px;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .img1 {
+            width: 50%;
+            height: auto;
+            position: relative;
+            float: left;
+            margin: 0px;
+            padding-left: 5%;
+        }
+
+        .aboutimg1 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/日式蜜香蛋糕.png");
+        }
+
+        .aboutimg2 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/比利時鬆餅.png");
+        }
+
+        .aboutimg3 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/雪燒銅鑼.png");
+        }
+
+        .aboutimg4 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/琥珀蛋糕捲.png");
+        }
+
+        .aboutimg5 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/德式布丁.png");
+        }
+
+        .aboutimg6 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/檸檬蛋糕.png");
+        }
+        .footer {
+            width: 100%;
+            height: 241px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 1620px;
+        }
+
+        .footer-conter {
+            width: 50%;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        .footer-logo {
+            width: 85px;
+            margin-top: 0px;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        .footer-text {
+            display: none;
+            width: 0%;
+        }
+
+        .footer-icon {
+            width: 235px;
+            margin-top: 0px;
+            padding-left: 0px;
+            /* text-align: center; */
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-icon img {
+            margin-top: 0px;
+            margin-top: 10px;
+            /* text-align: center;
+                            margin-left: auto;
+                            margin-right: auto; */
+        }
+
+        .footer-text2 {
+            width: 100%;
+            top: 0px;
+            padding: 0px;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        }
+        @media screen and (max-width:460px) {
+
+            body {
+
+                padding-top: 106px;
+                height: 800px;
+                font-family: 微軟正黑體;
+            }
+            h4 {
+                font-size: 25px
+            }
+
+            p {
+                font-size: 16px
+            }
+
+            .about2 {
+                top: 500px;
+                width: 100%;
+            }
+
+            .number {
+                float: right;
+                width: 300px;
+                height: 100px;
+                /* border: 2px solid rgb(255, 128, 128); */
+                position: relative;
+            }
+
+            ol {
+                padding: 0px;
+                position: absolute;
+            }
+
+            ol li {
+                width: 30px;
+                height: auto;
+                display: inline-block;
+                background-color: rgb(255, 230, 208);
+
+                color: rgb(0, 0, 0);
+                border-radius: 3px;
+                padding: 5px;
+                /* margin-right: 12px; */
+                transition-duration: 0.5s;
+                text-align: center;
+            }
+
+            .interval {
+                width: 100%;
+                height: 90px;
+                /* border: 1px solid green; */
+                position: absolute;
+                background-image: url("img/interval.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 289px;
+                /* bottom: 0px; */
+                z-index: -1;
+            }
+            .trian {
+                display: none
+                /* width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 0 20px 26.6px;
+                border-color: transparent transparent transparent rgb(255, 230, 208);
+                position: absolute;
+                top: 50%;
+                left: 90%;
+                transform: translate(-50%, -50%); */
+            }
+
+            .content1 {
+                width: 100%;
+                height: auto;
+                /* border: 1px solid rgb(51, 255, 0); */
+                top: 220px;
+                padding-top: 20px;
+                position: absolute;
+        }
+
+        .text1 {
+            width: 100%;
+            height: 800px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* top: 33%;
+            position: absolute;
+            left: 10%; */
+        }
+
+        .a1 {
+            width: 100%;
+            /* border: 1px solid gold; */
+            display: inline-block;
+            margin: 0px;
+            /* position: absolute; */
+            margin: auto;
+        }
+
+        .abouttext1 {
+            width: 50%;
+            height: auto;
+            float: right;
+            padding: 10px;
+            font-family: 微軟正黑體;
+            line-height: 25px;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .img1 {
+            width: 50%;
+            height: auto;
+            position: relative;
+            float: left;
+            margin: 0px;
+            padding-left: 0%;
+        }
+
+        .aboutimg1 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/日式蜜香蛋糕.png");
+        }
+
+        .aboutimg2 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/比利時鬆餅.png");
+        }
+
+        .aboutimg3 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/雪燒銅鑼.png");
+        }
+
+        .aboutimg4 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/琥珀蛋糕捲.png");
+        }
+
+        .aboutimg5 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/德式布丁.png");
+        }
+
+        .aboutimg6 {
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/cake/檸檬蛋糕.png");
+        }
+        .footer {
+            width: 100%;
+            height: 241px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 1620px;
+        }
+
+        .footer-conter {
+            width: 50%;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        .footer-logo {
+            width: 85px;
+            margin-top: 0px;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        .footer-text {
+            display: none;
+            width: 0%;
+        }
+
+        .footer-icon {
+            width: 235px;
+            margin-top: 0px;
+            padding-left: 0px;
+            /* text-align: center; */
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-icon img {
+            margin-top: 0px;
+            margin-top: 10px;
+            /* text-align: center;
+                            margin-left: auto;
+                            margin-right: auto; */
+        }
+
+        .footer-text2 {
+            width: 100%;
+            top: 0px;
+            padding: 0px;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-ligh">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="example-image" src="img/logo-02.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about us.html">關於我們
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="news.html">最新消息</a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            產品一覽
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product.html">咖啡飲品</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cake.html">西點蛋糕</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Toast.html">烘焙麵包</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">手工餅乾</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">義式冰品</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="connection.html">聯絡我們</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#">
+                    <img class="example-image" src="img/icon.png" alt="">
+                </a>
+            </div>
+    </nav>
+
+    <div class="about1">
+        <div class="abouta">烘焙麵包</div>
+    </div>
+
+    <div class="content1">
+        <div class="interval1"></div>
+        <div class="text1">
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>奶素</b>
+                    </p>
+                    <h4>
+                        <b> 白吐司 </b>
+                    </h4>
+                    <p>
+                        <br> 高筋麵粉、奶油、鹽
+                        <br>
+                        <br> Breas Flour, Butter, Salt
+                        <br>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>蛋奶素</b>
+                    </p>
+                    <h4>
+                        <b> 夏威夷吐司 </b>
+                    </h4>
+                    <p>
+                        <p style="font-size:15px"> 麵粉、葡萄乾、奶油蛋、奶酥、菠蘿酥皮</p>
+
+                        <p style="font-size:10px"> Flour, Butter, Egg, Baked Cream, Rainsins Pastry Crust</p>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>蛋奶素</b>
+                    </p>
+                    <h4>
+                        <b> 葡萄吐司 </b>
+                    </h4>
+                    <p>
+                        <br> 麵粉、蛋、奶油、葡萄乾
+                        <br>
+                        <br> Flour, Egg, Butter, Raisins
+                        <br>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>蛋奶素</b>
+                    </p>
+                    <h4>
+                        <b> 香濃牛奶吐司 </b>
+                    </h4>
+                    <p>
+                        <br> 麵粉、奶油、牛奶、蛋
+                        <br>
+                        <br> Flour, Butter, Milk, Egg
+                        <br>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>蛋奶素</b>
+                    </p>
+                    <h4>
+                        <b> 蜂蜜吐司 </b>
+                    </h4>
+                    <p>
+                        <br> 日本麵粉、龍眼蜂蜜
+                        <br>
+                        <br> Japan Bread Flour, Longan Honey
+                        <br>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a1">
+                <div class="abouttext1">
+                    <p style="float:right;clear:both;margin-right:30px;color:rgb(105, 57, 5); ">
+                        <b>需冷藏</b>
+                    </p>
+                    <h4>
+                        <b> 番茄凱薩吐司  </b>
+                    </h4>
+                    <p>
+                        <br> 麵粉、糖、鹽、乾酪、番茄
+                        <br>
+                        <br> Flour, Sugar, Salt, Cheese, Tomato
+                        <br>
+                    </p>
+                </div>
+                <div class="img1">
+                    <div class="a">
+                        <div class="trian"></div>
+                        <div class="imgs">
+                            <div class="ia">
+                                <div class="aboutimg6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="number">
+                <ol>
+                    <li class="b">
+                        〈
+                    </li>
+
+                    <li class="b">
+                        1
+                    </li>
+
+                    <li class="b">
+                        2
+                    </li>
+
+                    <li class="b">
+                        3
+                    </li>
+
+                    <li class="b">
+                        4
+                    </li>
+
+                    <li class="b">
+                        〉
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img class="example-image" src="img/logo-02.png" alt="">
+        </div>
+
+        <div class="footer-conter">
+            <div class="footer-text">
+                我們深知一杯美味咖啡的各項環節與要素。
+                <br> 所以選擇在店內精準演繹整個 Bean-to-Cup 流程。
+                <br> 手工挑豆、得宜烘焙、即時研磨、專業吧台技術…
+                <br> 從一顆生豆到一杯咖啡，最透明的製作流程，提供最真誠的賞味體驗。
+            </div>
+
+            <div class="footer-icon">
+                <div class="a">
+                    <img src="img/fb-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/twitter-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/ig-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/line-icon.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-text2">
+                電話：(02)2775-3385
+                <br> 地址：台北市大安區安和路一段27號18樓
+                <br> E-mail : service@camacafe.com
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

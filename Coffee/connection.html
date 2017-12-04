@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            /* height: 630px; */
+            padding-top: 106px;
+            height: 1575px;
+            font-family: 微軟正黑體;
+        }
+
+        nav {
+            font-family: 微軟正黑體;
+            font-size: 1.3rem;
+            /* z-index:-1; */
+        }
+
+        .container {
+            background-color: rgb(255, 230, 208);
+            /* z-index:-1; */
+        }
+
+        .bg-ligh {
+            background-color: rgb(255, 230, 208);
+            /* z-index:-1; */
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: white;
+            background-color: rgb(87, 53, 46);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+            background-color: rgb(160, 102, 87);
+        }
+
+        .nav-link {
+            background-color: #A16758;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .nav-link {
+            background-color: #A16758;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .example-image {
+            width: 5rem;
+            /* width: 80px;
+            height: 80px; */
+            border-radius: 20%;
+            /* border: 1px solid black; */
+        }
+
+        .interval {
+            width: 100%;
+            height: 90px;
+            /* border: 1px solid green; */
+            position: absolute;
+            background-image: url("img/interval.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 170px;
+            z-index: -1;
+        }
+
+        .about1 {
+            width: 100%;
+            height: 4rem;
+            /* border: 1px solid black; */
+            background-color: #251208;
+            position: relative;
+        }
+
+        .abouta {
+            /* background-image: url("img/about us.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            width: 8rem;
+            height: 6.5rem;
+            background-color: #251208;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            font-size: 1.3rem;
+            font-family: 微軟正黑體;
+            color: white;
+            text-align: center;
+            line-height: 7rem;
+            z-index: 1;
+        }
+
+        .content1 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 215px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content2 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 555px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content3 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 895px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content4 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 1085px;
+            padding-top: 20px;
+            position: absolute;
+
+        }
+
+        .text1 {
+            width: 80%;
+            height: 290px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .text2 {
+            width: 80%;
+            height: 140px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .abouttext1 {
+            /* position: absolute; */
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 50px;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 40px
+        }
+
+        .abouttext2 {
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 50px;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 10px
+        }
+
+        .abouttext3 {
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            /* float: right; */
+            /* padding-left: 10%; */
+            font-family: 微軟正黑體;
+            line-height: 30px;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: rgb(255, 230, 208);
+           
+        }
+
+        .Data-Content {
+                        width: 100%;
+                        line-height: 20px;
+                    }
+
+                    .Data-Title {
+                        float: left;
+                        /* width: 15%; Label寬度，視情況調整 */
+                        margin-right: 20px;
+                    }
+
+                    .Data-Items {
+                        float: left;
+                        width: 25%;
+                    }
+
+                    .AlignRight {
+                        text-align: right;
+                    }
+
+        .connea {
+            text-decoration: none;
+            color: rgb(87, 53, 46);
+            text-align: center;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 50px;
+            font-size: 18px
+        }
+
+        .connea:hover {
+            text-decoration: none;
+            color: rgb(240, 144, 0);
+        }
+
+        .img1 {
+            width: 50%;
+            height: 290px;
+            position: relative;
+            /* border: 1px solid red; */
+            float: right;
+            /* padding-left: 150px; */
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+
+        .aboutimg1 {
+            width: auto;
+            height: 290px;
+            /* border-radius: 50%; */
+            background-image: url("img/smile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            /* left: 70%;
+            transform: translate(-20%); */
+        }
+
+        .textinput {
+            width: auto;
+            height: auto;
+
+        }
+
+        #map {
+            height: 290px;
+            width: 50%;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 241px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 1345px;
+            background-color: #251208;
+            color: white;
+        }
+
+        .footer-logo {
+            width: 25%;
+            /* border: 1px solid black; */
+            float: left;
+            margin-top: 60px;
+            padding-left: 5%;
+            /* position: absolute; */
+        }
+
+        .footer-conter {
+            width: 75%;
+            /* border: 1px solid black; */
+            /* position: absolute; */
+            float: right;
+            margin-top: 60px;
+        }
+
+        .footer-icon {
+            width: 50%;
+            /* border: 1px solid red; */
+            display: flex;
+            float: right;
+            padding-left: 30px
+        }
+
+        .footer-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            margin-right: 10px
+        }
+
+        .footer-text {
+            width: 50%;
+            height: 126px;
+            /* border: 1px solid blue; */
+            float: left;
+            line-height: 31px;
+            font-size: 16px;
+        }
+
+        .footer-text2 {
+            width: 50%;
+            /* border: 1px solid green; */
+            float: right;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+
+        .footera {
+            float: left;
+            position: relative;
+            left: 50%
+        }
+
+        .footerb {
+            float: left;
+            position: relative;
+            left: -50%;
+        }
+
+        @media screen and (max-width:1200px) {
+
+            body {
+
+                padding-top: 106px;
+                height: 1500px;
+                font-family: 微軟正黑體;
+            }
+            h4 {
+                font-size: 25px
+            }
+
+            p {
+                font-size: 16px
+            }
+
+            .about2 {
+                top: 500px;
+                width: 100%;
+            }
+
+            .interval {
+                width: 100%;
+                height: 90px;
+                /* border: 1px solid green; */
+                position: absolute;
+                background-image: url("img/interval.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 180px;
+                /* bottom: 0px; */
+                z-index: -1;
+            }
+*
+            .content1 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 215px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content2 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 555px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content3 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 895px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content4 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 1085px;
+            padding-top: 20px;
+            position: absolute;
+
+        }
+
+        .text1 {
+            width: 80%;
+            height: 290px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .text2 {
+            width: 80%;
+            height: auto;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .abouttext1 {
+            /* position: absolute; */
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 50px;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 40px
+        }
+
+        .abouttext2 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 25%;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 10px
+        }
+
+        .abouttext3 {
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            /* float: right; */
+            /* padding-left: 10%; */
+            font-family: 微軟正黑體;
+            line-height: 30px;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: rgb(255, 230, 208);
+           
+        }
+
+        .Data-Content {
+                        width: 40%;
+                        line-height: 20px;
+                    }
+
+                    .Data-Title {
+                        float: left;
+                        width: 40%; 
+                        margin-right: 20px;
+                    }
+
+        .connea {
+            text-decoration: none;
+            color: rgb(87, 53, 46);
+            text-align: center;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 50px;
+            font-size: 18px
+        }
+
+        .connea:hover {
+            text-decoration: none;
+            color: rgb(240, 144, 0);
+        }
+
+        .img1 {
+           display: none;
+        }
+
+        .aboutimg1 {
+            width: auto;
+            height: 290px;
+            /* border-radius: 50%; */
+            background-image: url("img/smile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            /* left: 70%;
+            transform: translate(-20%); */
+        }
+
+        .textinput {
+            width: auto;
+            height: auto;
+
+        }
+
+        #map {
+            height: 290px;
+            width: 50%;
+        }
+
+        .footer {
+                width: 100%;
+                height: 241px;
+                /* border: 1px solid black; */
+                position: absolute;
+                top: 1355px;
+            }
+
+            .footer-conter {
+                width: 50%;
+                margin-top: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+
+            .footer-logo {
+                width: 85px;
+                margin-top: 0px;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+
+            .footer-text {
+                display: none;
+                width: 0%;
+            }
+
+            .footer-icon {
+                width: 235px;
+                margin-top: 0px;
+                padding-left: 0px;
+                /* text-align: center; */
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .footer-icon img {
+                margin-top: 0px;
+                margin-top: 10px;
+                /* text-align: center;
+                                margin-left: auto;
+                                margin-right: auto; */
+            }
+
+            .footer-text2 {
+                width: 100%;
+                top: 0px;
+                padding: 0px;
+                color: white;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 14px;
+            }
+
+        }
+
+        @media screen and (max-width:460px) {
+
+            body {
+
+                padding-top: 106px;
+                height: 1500px;
+                font-family: 微軟正黑體;
+            }
+            h4 {
+                font-size: 20px
+            }
+
+            p {
+                font-size: 15px
+            }
+
+            .about2 {
+                top: 500px;
+                width: 100%;
+            }
+
+            .interval {
+                width: 100%;
+                height: 90px;
+                /* border: 1px solid green; */
+                position: absolute;
+                background-image: url("img/interval.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 180px;
+                /* bottom: 0px; */
+                z-index: -1;
+            }
+*
+            .content1 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 215px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content2 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 555px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content3 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 895px;
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        .content4 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid red; */
+            top: 1085px;
+            padding-top: 20px;
+            position: absolute;
+
+        }
+
+        .text1 {
+            width: 95%;
+            height: 290px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .text2 {
+            width: 95%;
+            height: auto;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 230, 208);
+            border-radius: 20px;
+        }
+
+        .abouttext1 {
+            /* position: absolute; */
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 25px;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 40px
+        }
+
+        .abouttext2 {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid blue; */
+            float: right;
+            padding-left: 50px;
+            font-family: 微軟正黑體;
+            line-height: 32px;
+            padding-top: 10px
+        }
+
+        .abouttext3 {
+            width: 50%;
+            height: auto;
+            /* border: 1px solid blue; */
+            /* float: right; */
+            /* padding-left: 10%; */
+            font-family: 微軟正黑體;
+            line-height: 30px;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: rgb(255, 230, 208);
+           
+        }
+
+        .Data-Content {
+                        width: 60%;
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+
+                    .Data-Title {
+                        float: left;
+                        width: 50%; 
+                        margin-right: 20px;
+                    }
+
+        .connea {
+            text-decoration: none;
+            color: rgb(87, 53, 46);
+            text-align: center;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 50px;
+            font-size: 18px
+        }
+
+        .connea:hover {
+            text-decoration: none;
+            color: rgb(240, 144, 0);
+        }
+
+        .img1 {
+            display: none;
+        }
+
+        .aboutimg1 {
+            width: auto;
+            height: 290px;
+            /* border-radius: 50%; */
+            background-image: url("img/smile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            /* left: 70%;
+            transform: translate(-20%); */
+        }
+
+        .textinput {
+            width: auto;
+            height: auto;
+
+        }
+
+        #map {
+            height: 290px;
+            width: 50%;
+        }
+        
+        .footer {
+                width: 100%;
+                height: 241px;
+                /* border: 1px solid black; */
+                position: absolute;
+                top: 1355px;
+            }
+
+            .footer-conter {
+                width: 50%;
+                margin-top: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+
+            .footer-logo {
+                width: 85px;
+                margin-top: 0px;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+
+            .footer-text {
+                display: none;
+                width: 0%;
+            }
+
+            .footer-icon {
+                width: 235px;
+                margin-top: 0px;
+                padding-left: 0px;
+                /* text-align: center; */
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .footer-icon img {
+                margin-top: 0px;
+                margin-top: 10px;
+                /* text-align: center;
+                                margin-left: auto;
+                                margin-right: auto; */
+            }
+
+            .footer-text2 {
+                width: 100%;
+                top: 0px;
+                padding: 0px;
+                color: white;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 14px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-ligh">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="example-image" src="img/logo-02.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about us.html">關於我們
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="news.html">最新消息</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            產品一覽
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product.html">咖啡飲品</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cake.html">西點蛋糕</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Toast.html">烘焙麵包</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">手工餅乾</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">義式冰品</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="connection.html">聯絡我們</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#">
+                    <img class="example-image" src="img/icon.png" alt="">
+                </a>
+            </div>
+    </nav>
+
+    <div class="about1">
+        <div class="abouta">聯絡我們</div>
+    </div>
+
+    <div class="content1">
+        <!-- <div class="interval"></div> -->
+        <div class="text1">
+            <div class="abouttext1">
+                <h4>
+                    <B>我們在這兒 </B>
+                </h4>
+                <p> 時間：AM 10:00 至 PM 10:00
+                <p> 地址：台北市大安區安和路一段27號18樓
+                <p> 電話：(02)2775-3385
+            </div>
+
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="content2">
+        <!-- <div class="interval"></div> -->
+        <div class="text1">
+            <div class="abouttext2">
+                <h4>
+                    <B>想偷偷跟我們說什麼 </B>
+                </h4>
+                <div class="Data-Content">
+                    <div class="Data-Title">
+                        <div class="AlignRight">
+                            <label for="txt_name">姓名：</label>
+                            <br />
+                            <br>
+                            <label for="txt_email">信箱：</label>
+                            <br />
+                            <br>
+                            <label for="txt_phone">電話：</label>
+                            <br />
+                            <br>
+                            <label for="txt_textarea">建議或留言：</label>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="Data-Items">
+                        <input type="text" id="txt_name" />
+                        <br />
+                        <br>
+                        <input type="text" id="txt_email" />
+                        <br />
+                        <br>
+                        <input type="text" id="txt_phone" />
+                        <br />
+                        <br>
+                        <textarea style="height:100px;">輸入想要寫的內容...</textarea>
+                        <br />
+                    </div>
+                </div>
+
+            </div>
+            <div class="img1">
+                <div class="aboutimg1"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content3">
+        <!-- <div class="interval"></div> -->
+        <div class="text2">
+            <div class="abouttext3">
+                <h4>
+                    <B>加盟合作專線</B>
+                </h4>
+                如果您想與我們合作或加盟，請將資料準備好MAIL至我們：
+                <br>
+                <br> OXOX@gmail.com
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="content4">
+        <div class="interval"></div>
+        <div class="text2">
+            <div class="abouttext3">
+                <h4>
+                    <B>想加入我們嗎</B>
+                </h4>
+                夥伴招募消息
+                <br>
+                <br>
+                <a class="connea" style="margin-left: 0px" href="#">104</a>
+                <a class="connea" href="#">1111</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img class="example-image" src="img/logo-02.png" alt="">
+        </div>
+
+        <div class="footer-conter">
+            <div class="footer-text">
+                我們深知一杯美味咖啡的各項環節與要素。
+                <br> 所以選擇在店內精準演繹整個 Bean-to-Cup 流程。
+                <br> 手工挑豆、得宜烘焙、即時研磨、專業吧台技術…
+                <br> 從一顆生豆到一杯咖啡，最透明的製作流程，提供最真誠的賞味體驗。
+            </div>
+
+            <div class="footer-icon">
+                <div class="a">
+                    <img src="img/fb-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/twitter-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/ig-icon.png" alt="">
+                </div>
+                <div class="a">
+                    <img src="img/line-icon.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-text2">
+                電話：(02)2775-3385
+                <br> 地址：台北市大安區安和路一段27號18樓
+                <br> E-mail : service@camacafe.com
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function initMap() {
+            var uluru = { lat: 25.039325, lng: 121.550473 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTnF2SwkQiSfmvo7ly9X5x1exeGHAlyN4&callback=initMap">
+    </script>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
